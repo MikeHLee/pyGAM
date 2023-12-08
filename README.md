@@ -1,10 +1,9 @@
-![build](https://github.com/dswah/pyGAM/actions/workflows/ci.yml/badge.svg)
+[![Build Status](https://travis-ci.org/dswah/pyGAM.svg?branch=master)](https://travis-ci.org/dswah/pyGAM)
 [![Documentation Status](https://readthedocs.org/projects/pygam/badge/?version=latest)](https://pygam.readthedocs.io/en/latest/?badge=latest)
 [![PyPI version](https://badge.fury.io/py/pygam.svg)](https://badge.fury.io/py/pygam)
 [![codecov](https://codecov.io/gh/dswah/pygam/branch/master/graph/badge.svg)](https://codecov.io/gh/dswah/pygam)
-[![python38](https://img.shields.io/badge/python-3.8-blue.svg)](https://badge.fury.io/py/pygam)
-[![python39](https://img.shields.io/badge/python-3.9-blue.svg)](https://badge.fury.io/py/pygam)
-[![python310](https://img.shields.io/badge/python-3.10-blue.svg)](https://badge.fury.io/py/pygam)
+[![python27](https://img.shields.io/badge/python-2.7-blue.svg)](https://badge.fury.io/py/pygam)
+[![python36](https://img.shields.io/badge/python-3.6-blue.svg)](https://badge.fury.io/py/pygam)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1208723.svg)](https://doi.org/10.5281/zenodo.1208723)
 
 
@@ -48,11 +47,15 @@ To start:
 - Now **install** the testing **dependencies**
 
 ```
-conda install cython
+conda install pytest numpy pandas scipy pytest-cov cython
 pip install --upgrade pip
-pip install poetry
-poetry install --with dev
+pip install -r requirements.txt
 ```
+
+It helps to add a **sym-link** of the forked project to your **python path**. To do this, you should **install [flit](http://flit.readthedocs.io/en/latest/index.html)**:
+- ```pip install flit```
+- Then from main project folder (ie `.../pyGAM`) do:
+```flit install -s```
 
 Make some changes and write a test...
 - **Test** your contribution (eg from the `.../pyGAM`):
