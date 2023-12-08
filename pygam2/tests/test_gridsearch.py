@@ -2,7 +2,7 @@
 import numpy as np
 import pytest
 
-from pygam import *
+from pygam2 import *
 
 
 def test_gridsearch_returns_scores(mcycle_X_y):

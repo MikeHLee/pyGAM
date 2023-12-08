@@ -11,9 +11,9 @@ from copy import deepcopy
 import numpy as np
 import scipy as sp
 
-from pygam.core import Core, nice_repr
-from pygam.utils import isiterable, check_param, flatten, gen_edge_knots, b_spline_basis, tensor_product
-from pygam.penalties import PENALTIES, CONSTRAINTS
+from pygam2.core import Core, nice_repr
+from pygam2.utils import isiterable, check_param, flatten, gen_edge_knots, b_spline_basis, tensor_product
+from pygam2.penalties import PENALTIES, CONSTRAINTS
 
 
 class Term(Core):

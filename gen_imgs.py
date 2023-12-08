@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
 from mpl_toolkits import mplot3d
 
-from pygam import *
-from pygam.datasets import hepatitis, wage, faithful, mcycle, trees, default, cake, toy_classification, toy_interaction, chicago
+from pygam2 import *
+from pygam2.datasets import hepatitis, wage, faithful, mcycle, trees, default, cake, toy_classification, toy_interaction, chicago
 
 np.random.seed(420)
 fontP = FontProperties()

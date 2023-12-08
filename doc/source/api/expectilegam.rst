@@ -4,8 +4,8 @@ ExpectileGAM
 ============
 ::
 
-  from pygam import ExpectileGAM
-  from pygam.datasets import mcycle
+  from pygam2 import ExpectileGAM
+  from pygam2.datasets import mcycle
 
   X, y = mcycle(return_X_y=True)
 

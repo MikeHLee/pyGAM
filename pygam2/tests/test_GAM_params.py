@@ -3,7 +3,7 @@
 import numpy as np
 import pytest
 
-from pygam import *
+from pygam2 import *
 
 
 def test_lam_non_neg_array_like(cake_X_y):

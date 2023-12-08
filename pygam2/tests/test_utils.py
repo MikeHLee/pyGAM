@@ -11,8 +11,8 @@ except ImportError:
 import numpy as np
 import pytest
 
-from pygam import *
-from pygam.utils import check_X, check_y, check_X_y, sig_code, check_iterable_depth
+from pygam2 import *
+from pygam2.utils import check_X, check_y, check_X_y, sig_code, check_iterable_depth
 
 
 # TODO check dtypes works as expected
@@ -212,10 +212,10 @@ def test_iterable_depth():
 def test_no_SKSPIMPORT(mcycle_X_y):
     """make sure our module work with and without scikit-sparse
     """
-    from pygam.utils import SKSPIMPORT
+    from pygam2.utils import SKSPIMPORT
     if SKSPIMPORT:
         with patch('pygam.utils.SKSPIMPORT', new=False) as SKSPIMPORT_patch:
-            from pygam.utils import SKSPIMPORT
+            from pygam2.utils import SKSPIMPORT
             assert SKSPIMPORT == False
 
             X, y = mcycle_X_y

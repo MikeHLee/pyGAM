@@ -3,7 +3,7 @@
 import numpy as np
 import pytest
 
-from pygam.core import *
+from pygam2.core import *
 
 def test_Core_class():
     """

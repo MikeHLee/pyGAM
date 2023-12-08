@@ -5,9 +5,9 @@ from copy import deepcopy
 import numpy as np
 import pytest
 
-from pygam import *
-from pygam.terms import Term, Intercept, SplineTerm, LinearTerm, FactorTerm, TensorTerm, TermList
-from pygam.utils import flatten
+from pygam2 import *
+from pygam2.terms import Term, Intercept, SplineTerm, LinearTerm, FactorTerm, TensorTerm, TermList
+from pygam2.utils import flatten
 
 @pytest.fixture
 def chicago_gam(chicago_X_y):
@@ -273,7 +273,7 @@ def test_tensor_composite_constraints_equal_penalties():
     """check that the composite constraint matrix for a tensor term
     is equivalent to a penalty matrix under the correct conditions
     """
-    from pygam.penalties import derivative
+    from pygam2.penalties import derivative
 
     def der1(*args, **kwargs):
         kwargs.update({'derivative':1})

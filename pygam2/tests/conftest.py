@@ -4,8 +4,8 @@ import pytest
 import pandas as pd
 import numpy as np
 
-from pygam import *
-from pygam.datasets import (mcycle, coal, faithful, cake, coal, default, trees,
+from pygam2 import *
+from pygam2.datasets import (mcycle, coal, faithful, cake, coal, default, trees,
                             hepatitis, wage, toy_classification,
                             head_circumference, chicago, toy_interaction)
 

@@ -3,16 +3,16 @@
 import numpy as np
 import pytest
 
-from pygam import *
+from pygam2 import *
 
-from pygam.penalties import derivative
-from pygam.penalties import l2
-from pygam.penalties import monotonic_inc
-from pygam.penalties import monotonic_dec
-from pygam.penalties import convex
-from pygam.penalties import concave
-from pygam.penalties import none
-from pygam.penalties import wrap_penalty
+from pygam2.penalties import derivative
+from pygam2.penalties import l2
+from pygam2.penalties import monotonic_inc
+from pygam2.penalties import monotonic_dec
+from pygam2.penalties import convex
+from pygam2.penalties import concave
+from pygam2.penalties import none
+from pygam2.penalties import wrap_penalty
 
 
 def test_single_spline_penalty():

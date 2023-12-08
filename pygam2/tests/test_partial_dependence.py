@@ -6,7 +6,7 @@ import numpy as np
 import pytest
 import scipy as sp
 
-from pygam import *
+from pygam2 import *
 
 
 class TestPartialDepencence(object):

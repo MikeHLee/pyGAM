@@ -6,7 +6,7 @@ from __future__ import absolute_import
 
 import numpy as np
 
-from pygam.utils import round_to_n_decimal_places, flatten
+from pygam2.utils import round_to_n_decimal_places, flatten
 
 def nice_repr(name, param_kvs, line_width=30, line_offset=5, decimals=3, args=None, flatten_attrs=True):
     """

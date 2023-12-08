@@ -3,18 +3,18 @@
 import numpy as np
 import pytest
 
-from pygam.datasets import cake
-from pygam.datasets import coal
-from pygam.datasets import default
-from pygam.datasets import faithful
-from pygam.datasets import hepatitis
-from pygam.datasets import mcycle
-from pygam.datasets import trees
-from pygam.datasets import wage
-from pygam.datasets import chicago
-from pygam.datasets import toy_interaction
+from pygam2.datasets import cake
+from pygam2.datasets import coal
+from pygam2.datasets import default
+from pygam2.datasets import faithful
+from pygam2.datasets import hepatitis
+from pygam2.datasets import mcycle
+from pygam2.datasets import trees
+from pygam2.datasets import wage
+from pygam2.datasets import chicago
+from pygam2.datasets import toy_interaction
 
-from pygam.datasets import __all__ as DATASETS
+from pygam2.datasets import __all__ as DATASETS
 
 def _test_dataset(dataset_loader, n_rows, n_columns_X, n_columns_df, n_rows_X=None):
     """check the length of the dataset is the same regardless of the transformation

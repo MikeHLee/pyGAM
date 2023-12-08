@@ -8,7 +8,7 @@ from os.path import dirname
 import pandas as pd
 import numpy as np
 
-from pygam.utils import make_2d
+from pygam2.utils import make_2d
 
 
 PATH = dirname(__file__)

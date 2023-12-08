@@ -2,7 +2,7 @@
 
 import pytest
 
-from pygam import *
+from pygam2 import *
 
 
 def test_can_build_sub_models():

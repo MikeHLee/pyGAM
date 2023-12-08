@@ -10,8 +10,8 @@ from abc import abstractmethod
 import scipy as sp
 import numpy as np
 
-from pygam.core import Core
-from pygam.utils import ylogydu
+from pygam2.core import Core
+from pygam2.utils import ylogydu
 
 
 def multiply_weights(deviance):

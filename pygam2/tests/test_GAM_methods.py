@@ -6,7 +6,7 @@ import numpy as np
 import pytest
 import scipy as sp
 
-from pygam import *
+from pygam2 import *
 
 
 def test_LinearGAM_prediction(mcycle_X_y, mcycle_gam):

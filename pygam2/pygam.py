@@ -11,69 +11,69 @@ import numpy as np
 import scipy as sp
 from scipy import stats
 
-from pygam.core import Core
+from pygam2.core import Core
 
-from pygam.penalties import derivative
-from pygam.penalties import l2
-from pygam.penalties import monotonic_inc
-from pygam.penalties import monotonic_dec
-from pygam.penalties import convex
-from pygam.penalties import concave
-from pygam.penalties import none
-from pygam.penalties import wrap_penalty
-from pygam.penalties import PENALTIES, CONSTRAINTS
+from pygam2.penalties import derivative
+from pygam2.penalties import l2
+from pygam2.penalties import monotonic_inc
+from pygam2.penalties import monotonic_dec
+from pygam2.penalties import convex
+from pygam2.penalties import concave
+from pygam2.penalties import none
+from pygam2.penalties import wrap_penalty
+from pygam2.penalties import PENALTIES, CONSTRAINTS
 
-from pygam.distributions import Distribution
-from pygam.distributions import NormalDist
-from pygam.distributions import BinomialDist
-from pygam.distributions import PoissonDist
-from pygam.distributions import GammaDist
-from pygam.distributions import InvGaussDist
-from pygam.distributions import DISTRIBUTIONS
+from pygam2.distributions import Distribution
+from pygam2.distributions import NormalDist
+from pygam2.distributions import BinomialDist
+from pygam2.distributions import PoissonDist
+from pygam2.distributions import GammaDist
+from pygam2.distributions import InvGaussDist
+from pygam2.distributions import DISTRIBUTIONS
 
-from pygam.links import Link
-from pygam.links import IdentityLink
-from pygam.links import LogitLink
-from pygam.links import LogLink
-from pygam.links import InverseLink
-from pygam.links import InvSquaredLink
-from pygam.links import LINKS
+from pygam2.links import Link
+from pygam2.links import IdentityLink
+from pygam2.links import LogitLink
+from pygam2.links import LogLink
+from pygam2.links import InverseLink
+from pygam2.links import InvSquaredLink
+from pygam2.links import LINKS
 
-from pygam.callbacks import CallBack
-from pygam.callbacks import Deviance
-from pygam.callbacks import Diffs
-from pygam.callbacks import Accuracy
-from pygam.callbacks import Coef
-from pygam.callbacks import validate_callback
-from pygam.callbacks import CALLBACKS
+from pygam2.callbacks import CallBack
+from pygam2.callbacks import Deviance
+from pygam2.callbacks import Diffs
+from pygam2.callbacks import Accuracy
+from pygam2.callbacks import Coef
+from pygam2.callbacks import validate_callback
+from pygam2.callbacks import CALLBACKS
 
-from pygam.utils import check_y
-from pygam.utils import check_X
-from pygam.utils import check_X_y
-from pygam.utils import make_2d
-from pygam.utils import flatten
-from pygam.utils import check_array
-from pygam.utils import check_lengths
-from pygam.utils import load_diagonal
-from pygam.utils import TablePrinter
-from pygam.utils import space_row
-from pygam.utils import sig_code
-from pygam.utils import b_spline_basis
-from pygam.utils import combine
-from pygam.utils import cholesky
-from pygam.utils import check_param
-from pygam.utils import isiterable
-from pygam.utils import NotPositiveDefiniteError
-from pygam.utils import OptimizationError
+from pygam2.utils import check_y
+from pygam2.utils import check_X
+from pygam2.utils import check_X_y
+from pygam2.utils import make_2d
+from pygam2.utils import flatten
+from pygam2.utils import check_array
+from pygam2.utils import check_lengths
+from pygam2.utils import load_diagonal
+from pygam2.utils import TablePrinter
+from pygam2.utils import space_row
+from pygam2.utils import sig_code
+from pygam2.utils import b_spline_basis
+from pygam2.utils import combine
+from pygam2.utils import cholesky
+from pygam2.utils import check_param
+from pygam2.utils import isiterable
+from pygam2.utils import NotPositiveDefiniteError
+from pygam2.utils import OptimizationError
 
-from pygam.terms import Term
-from pygam.terms import Intercept, intercept
-from pygam.terms import LinearTerm, l
-from pygam.terms import SplineTerm, s
-from pygam.terms import FactorTerm, f
-from pygam.terms import TensorTerm, te
-from pygam.terms import TermList
-from pygam.terms import MetaTermMixin
+from pygam2.terms import Term
+from pygam2.terms import Intercept, intercept
+from pygam2.terms import LinearTerm, l
+from pygam2.terms import SplineTerm, s
+from pygam2.terms import FactorTerm, f
+from pygam2.terms import TensorTerm, te
+from pygam2.terms import TermList
+from pygam2.terms import MetaTermMixin
 
 
 EPS = np.finfo(np.float64).eps # machine epsilon
@@ -2849,7 +2849,7 @@ class GammaGAM(GAM):
 
     If you need to use the inverse link function, simply construct a custom GAM:
 
-    >>> from pygam import GAM
+    >>> from pygam2 import GAM
     >>> gam = GAM(distribution='gamma', link='inverse')
 
 
@@ -2957,7 +2957,7 @@ class InvGaussGAM(GAM):
 
     If you need to use the inverse squared link function, simply construct a custom GAM:
 
-    >>> from pygam import GAM
+    >>> from pygam2 import GAM
     >>> gam = GAM(distribution='inv_gauss', link='inv_squared')
 
 

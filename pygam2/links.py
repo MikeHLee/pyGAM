@@ -5,7 +5,7 @@ from __future__ import division, absolute_import
 
 import numpy as np
 
-from pygam.core import Core
+from pygam2.core import Core
 
 
 class Link(Core):
