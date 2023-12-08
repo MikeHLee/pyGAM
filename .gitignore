@@ -1,3 +1,6 @@
+#Build environment
+/test_env
+
 # Compiled source #
 ###################
 *.pyc
