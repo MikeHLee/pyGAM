@@ -3,10 +3,10 @@ requires = ["flit_core >=2,<4"]
 build-backend = "flit_core.buildapi"
 
 [tool.flit.metadata]
-module = "pygam"
+module = "pygam2"
 author = "MikeHLee"
 author-email = "leemichael289@gmail.com"
-home-page = "https://github.com/dswah/pyGAM"
+home-page = "https://github.com/MikeHLee/pyGAM2"
 classifiers = [
     "License :: OSI Approved :: Apache Software License",
     "Topic :: Scientific/Engineering",
