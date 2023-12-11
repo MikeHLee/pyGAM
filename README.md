@@ -7,8 +7,13 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1208723.svg)](https://doi.org/10.5281/zenodo.1208723)
 
 
-# pyGAM
-Generalized Additive Models in Python.
+# pyGAM2
+Generalized Additive Models in Python, with modern python support (<= 3.11)
+
+### Disclaimer
+This project would not exist if it were not for the excellent prior work of users
+- dswah & colleagues (original implementation)
+- jmahlik (python 3.11 support)
 
 <img src=imgs/pygam_tensor.png>
 
@@ -126,7 +131,6 @@ http://www.ibschannel2015.nl/project/userfiles/Crash_course_handout.pdf
 
 0. Keiding, Niels, 1991  
 Age-specific incidence and prevalence: a statistical perspective
-
 
 <!---http://www.cs.princeton.edu/courses/archive/fall11/cos323/notes/cos323_f11_lecture09_svd.pdf--->
 
